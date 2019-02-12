@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome | Team Majin</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="nav">
+                <a href="#" class="nav__item">shop</a>
+                <div class="dropdown">
+                    <a href="#" class="nav__item active">roster <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="leads.html">Leads</a>
+                        <div class="dropside">
+                            <a href="#">Players <i class="fas fa-caret-right"></i></a>
+                            <div class="dropside-content">
+                                <a href="cod.html">Call of Duty</a>
+                                <a href="fort.html">Fortnite</a>
+                            </div>
+                        </div>
+                        <a href="#">Creators</a>
+                        <a href="#">Editors</a>
+                        <a href="#">Designers</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav__item">about us</a>
+            </nav>
+            <a href="index.html" class="header__logo"><img src="img/mjnlgo.png" alt="Site logo"></a>
+            <div class="header__icons">
+                <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </header>
+<div id="particles-js"></div>
+    <div class="leads">
+        <dib class="leads__wrapper">
+            <h2 class="leads__heading">Our Leads</h2>
+            <div class="leads__line"></div>
+            <div class="leaders">
+                <a href="#" class="leader">
+                    <img class="leader__img" src="https://pbs.twimg.com/profile_images/1055480009316548608/hIZl-fdf_400x400.jpg" alt="leader avi" class="leader__img">
+                    <h3 class="leader__name">Burr</h3>
+                    <p class="leader__position">Co-Lead</p>
+                </a>
+                <a href="#" class="leader">
+                    <img class="leader__img" src="https://pbs.twimg.com/profile_images/1087517751990726656/jmVSaHk5_400x400.jpg" alt="leader avi" class="leader__img">
+                    <h3 class="leader__name">Jenk</h3>
+                    <p class="leader__position">Overall</p>
+                </a>
+                <a href="#" class="leader">
+                    <img class="leader__img" src="https://pbs.twimg.com/profile_images/1080868335602958336/ouL16VnU_400x400.jpg" alt="leader avi">
+                    <h3 class="leader__name">Hardy</h3>
+                    <p class="leader__position">Founder/Owner</p>
+                </a>
+                <a href="#" class="leader">
+                    <img class="leader__img" src="https://pbs.twimg.com/profile_images/1087924735512596480/SEoPK-NA_400x400.jpg" alt="leader avi" class="leader__img">
+                    <h3 class="leader__name">Yoho</h3>
+                    <p class="leader__position">Co-Lead</p>
+                </a>
+                <a href="#" class="leader">
+                    <img class="leader__img" src="https://pbs.twimg.com/profile_images/1087818374380511232/D5E7FRiZ_400x400.jpg" alt="leader avi" class="leader__img">
+                    <h3 class="leader__name">Fayte</h3>
+                    <p class="leader__position">Co-Lead</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js',
+        'particles.json', function(){
+            console.log('particles.json loaded')
+        });
+    </script>
+</body>
+</html>

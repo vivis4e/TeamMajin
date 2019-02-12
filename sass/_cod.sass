@@ -1,0 +1,49 @@
+.cod
+    width: 100%
+    height: 100vh
+    background: url(../img/comp2.jpg) center bottom
+    position: absolute
+    z-index: -2
+    .cod__bg
+        background: rgba(29, 29, 51,.9)
+        height: 100%
+        width: 100%
+        position: absolute
+        z-index: -1
+    .cod__wrapper
+        width: 1400px
+        margin: 0 auto
+        height: 90%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .cod__heading
+            font-size: 40px
+            font-weight: 600
+            text-transform: uppercase
+            color: $colorBg
+        .cod__line
+            height: 3px
+            width: 140px
+            background: #c6a03f
+            margin-top: 5px
+        .cod__players
+            margin-top: 50px
+            display: flex
+            justify-content: space-around
+            .players__left
+                margin-right: 100px
+            .player
+                text-decoration: none
+                color: $colorBg
+                font-size: 20px
+                margin-right: 10px
+                line-height: 1.5
+                display: block
+                &:hover
+                    color: $colorPrimary
+                .fab
+                    font-size: 16px
+                    margin-right: 10px
+                    color: #00aced

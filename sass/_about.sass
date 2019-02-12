@@ -1,0 +1,111 @@
+$colorPrimary: #783fc6
+$colorHeading: #0d0d11
+$colorHover: #121216
+$colorP: #041a21
+$colorBg: #fffaff
+
+#particles-js 
+    position: absolute
+    z-index: -5
+    background: #1d1d33
+    height: 100vh
+    width: 100%
+    
+.about
+    width: 100%
+    height: 100vh
+    .about__wrapper
+        width: 1400px
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 90%
+        .wrapper__left
+            width: 50%
+            height: 400px
+            .about__heading
+                font-size: 40px
+                font-weight: 600
+                text-transform: uppercase
+                color: $colorBg
+            .about__line
+                height: 3px
+                width: 120px
+                background: #c6a03f
+                margin-top: 5px
+                margin-right: 100px
+            .about__box
+                width: 90%
+                background: $colorPrimary
+                margin-top: 30px
+                border-radius: 5px
+                position: relative
+                overflow: hidden
+                span
+                    position: absolute
+                    top: 0
+                    left: -120%
+                    width: 100%
+                    height: 100%
+                    background: rgba(255,255,255,.2)
+                    transition: .5s
+                    transform: skewX(25deg)
+                &:hover span
+                    left: 120%
+                .box__text
+                    padding: 20px 60px
+                    color: $colorBg
+                    font-size: 20px
+                    line-height: 1.5
+        .wrapper__right
+            width: 50%
+            height: 400px
+            display: flex
+            flex-direction: column
+            align-items: center
+            .numbers__heading
+                font-size: 40px
+                font-weight: 600
+                text-transform: uppercase
+                color: $colorBg
+            .numbers__line
+                height: 3px
+                width: 120px
+                background: #c6a03f
+                margin-top: 5px
+            .numbers__section
+                width: 100%
+                height: 80%
+                align-items: center
+                justify-content: center
+                display: flex
+                margin-top: 30px
+                .section__left
+                    align-items: center
+                    justify-content: center
+                    display: flex
+                    width: 40%
+                    flex-direction: column
+                    .fab
+                        color: #ff0000
+                        font-size: 100px
+                    h3
+                        margin-top: 10px
+                        font-size: 60px
+                        font-weight: 600
+                        color: $colorBg
+                .section__right
+                    align-items: center
+                    justify-content: center
+                    display: flex
+                    flex-direction: column
+                    width: 40%
+                    .fab
+                        color: #00aced
+                        font-size: 100px
+                    h3
+                        margin-top: 10px
+                        font-size: 60px
+                        font-weight: 600
+                        color: $colorBg

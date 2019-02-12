@@ -1,0 +1,267 @@
+@import 'reset'
+@import 'about'
+@import 'leads'
+@import 'cod'
+@import 'fort'
+
+$colorPrimary: #783fc6
+$colorHeading: #0d0d11
+$colorHover: #121216
+$colorP: #041a21
+$colorBg: #fffaff
+
+@keyframes slide 
+    0% 
+        left: 100%
+        width: 100%
+    5% 
+        left: 0%
+    25% 
+        left: 0%
+    30% 
+        left: -100%
+        width: 100%
+    31% 
+        left: -100%
+        width: 0%
+    100% 
+        left: 100%
+        width: 0%
+
+.btn--purple
+    color: $colorPrimary
+    border: 1px solid $colorPrimary
+    &:hover  
+        color: $colorBg
+        background: $colorPrimary
+
+.btn--red
+    color: #ff0000
+    border: 1px solid #ff0000
+    &:hover 
+        color: $colorBg
+        background: #ff0000
+
+.bg 
+    position: absolute
+    height: 100%
+    width: 100%
+    background: rgba(0,0,0,.7)
+    z-index: -1
+
+.active
+    color: $colorPrimary !important
+    &:after
+        width: 100% !important
+        opacity: 1 !important
+
+/*=====HEADER===============================================================*/
+
+.header 
+    background: #131319
+    height: 80px
+    width: 100%
+    .header__wrapper
+        width: 1400px
+        height: 100%
+        margin: 0 auto
+        display: flex
+        align-items: center
+        justify-content: space-between
+        position: relative
+        .nav
+            height: 100%
+            display: flex
+            width: 23%
+            align-items: center
+            justify-content: space-between
+            position: relative
+            .nav__item
+                color: $colorBg
+                text-decoration: none
+                font-size: 18px
+                text-transform: uppercase
+                padding-top: 31px
+                padding-bottom: 31px
+                position: relative
+                transition: all .2s ease-in-out
+                display: inline-block
+                &:hover
+                    color: $colorPrimary 
+                &:hover:after
+                    opacity: 1 
+                    width: 100% 
+                .fas
+                    font-size: 15px
+                    padding-left: 3px
+            .nav__item:after
+                content: ''
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                bottom: 0px
+                height: 2px 
+                width: 2px
+                background: $colorPrimary
+                opacity: 0
+                transition: all .2s ease-in-out
+            .dropdown:hover .nav__item:after
+                opacity: 0
+            .dropdown:hover .dropdown-content
+                visibility: visible
+                opacity: 1
+            .dropdown-content
+                position: absolute
+                top: 60px
+                left: 48%
+                transform: translateX(-50%)
+                width: 120px
+                display: flex
+                flex-direction: column
+                background: #131319
+                align-items: center
+                transition: all .2s ease-in-out
+                visibility: hidden
+                opacity: 0
+                a
+                    color: $colorBg
+                    text-decoration: none
+                    font-size: 16px
+                    text-transform: uppercase
+                    padding: 15px
+                    width: 100%
+                    transition: all .2s ease-in-out
+                    &:not(:last-child)
+                        border-bottom: 1px solid $colorPrimary
+                    &:hover 
+                        color: $colorPrimary
+                    .fas 
+                        font-size: 15px
+                        padding-left: 3px
+                .dropside
+                    position: relative
+                    width: 100%
+                    z-index: 5
+                    display: block
+                    a 
+                        display: block
+                    &:hover .dropside-content
+                        visibility: visible
+                        opacity: 1
+                    .dropside-content
+                        position: absolute 
+                        width: 120px
+                        display: flex
+                        flex-direction: column
+                        background: #131319
+                        align-items: center
+                        left: 100%
+                        top: 1px
+                        visibility: hidden
+                        opacity: 0
+                        transition: all .2s ease-in-out
+                        a 
+                            width: 100%
+                        
+
+        .header__icons
+            .icon   
+                color: $colorBg
+                margin-left: 50px
+                font-size: 18px
+                transition: all .2s ease-in-out
+                &:hover
+                    color: $colorPrimary
+    .header__logo 
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        height: 35px
+        img
+            height: 100%
+
+/*=====CTA===============================================================*/
+.cta 
+    height: 700px
+    position: relative
+    width: 100%
+    z-index: -4
+    .slider
+        display: block
+        width: 100%
+        height: 100%
+        background-color: $colorBg
+        overflow: hidden
+        position: absolute
+        z-index: -3
+    .slide
+        position: absolute
+        display: block
+        width: 100%
+        height: 100%
+        animation: slide 20s infinite
+        overflow: hidden
+        z-index: -2
+        .slide__wrapper
+            width: 1400px
+            height: 100%
+            margin: 0 auto
+            display: flex
+            align-items: center
+            justify-content: space-between
+        .cta__heading 
+            color: $colorBg
+            font-size: 60px
+            font-weight: 700
+            text-transform: uppercase
+            display: block
+        .cta__btn
+            font-size: 20px
+            display: inline-block
+            font-weight: 400
+            padding: 15px 30px
+            border-radius: 3px
+            text-transform: uppercase
+            text-decoration: none
+            margin-top: 40px
+            transition: all .2s ease-in-out
+    .slide:nth-child(1)
+        animation-delay: -2s
+        background-image: url(http://i.freegifmaker.me/1/5/4/9/7/4/1549744530710124.gif?1549744543)
+        background-size: cover 
+        background-position: center
+        position: absolute
+        left: 0%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    .slide:nth-child(2)
+        animation-delay: 3s
+        background-image: url(../img/bg.jpeg) 
+        background-size: cover 
+        background-position: center
+        position: absolute
+        left: 100%
+    .slide:nth-child(3)
+        animation-delay: 8s
+        background-image: url(http://i.freegifmaker.me/1/5/4/9/7/4/1549744530710124.gif?1549744543)
+        background-size: cover 
+        background-position: center
+        position: absolute
+        left: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    .slide:nth-child(4)
+        animation-delay: 13s
+        background-image: url(../img/bg.jpeg) 
+        background-size: cover 
+        background-position: center
+        position: absolute
+        left: 100%
+                
+            
+            
