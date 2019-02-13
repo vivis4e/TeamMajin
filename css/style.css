@@ -384,6 +384,185 @@ table {
   margin-right: 80px;
 }
 
+.creators {
+  width: 100%;
+  height: 100vh;
+}
+.creators .creators__wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.creators .creators__wrapper .creators__heading {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fffaff;
+}
+.creators .creators__wrapper .creators__line {
+  height: 3px;
+  width: 140px;
+  background: #c6a03f;
+  margin-top: 5px;
+}
+.creators .creators__wrapper .streamers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 56%;
+  grid-gap: 30px;
+  margin-top: 60px;
+}
+.creators .creators__wrapper .streamers .streamer {
+  background: #fffaff;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  height: 140px;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.creators .creators__wrapper .streamers .streamer .streamer__img {
+  width: 140px;
+  border-radius: 50%;
+  margin: 15px;
+}
+.creators .creators__wrapper .streamers .streamer .streamer__line {
+  height: 100%;
+  width: 2px;
+  background: #783fc6;
+}
+.creators .creators__wrapper .streamers .streamer .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  height: 70%;
+  width: 100%;
+  justify-content: space-between;
+  color: #783fc6;
+  font-size: 26px;
+  font-weight: 600;
+}
+.creators .creators__wrapper .streamers .streamer .info .streamer__button--yt {
+  display: inline-block;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.creators .creators__wrapper .streamers .streamer .info .streamer__button--yt:hover {
+  color: #fffaff;
+  background: #ff0000;
+}
+.creators .creators__wrapper .streamers .streamer .info .streamer__button--twitch {
+  display: inline-block;
+  color: #6441A4;
+  border: 1px solid #6441A4;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.creators .creators__wrapper .streamers .streamer .info .streamer__button--twitch:hover {
+  color: #fffaff;
+  background: #6441A4;
+}
+
+.editors {
+  width: 100%;
+  height: 100vh;
+}
+.editors .editors__wrapper {
+  width: 1400px;
+  margin: 0 auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.editors .editors__wrapper .editors__heading {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fffaff;
+}
+.editors .editors__wrapper .editors__line {
+  height: 3px;
+  width: 140px;
+  background: #c6a03f;
+  margin-top: 5px;
+}
+.editors .editors__wrapper .edits {
+  display: flex;
+  margin-top: 90px;
+  width: 55%;
+  justify-content: space-between;
+}
+.editors .editors__wrapper .edits .editor {
+  background: #fffaff;
+  border-radius: 5px;
+  align-items: center;
+  height: 300px;
+  width: 30%;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  aling-items: center;
+}
+.editors .editors__wrapper .edits .editor:nth-child(2) {
+  position: relative;
+  top: -30px;
+}
+.editors .editors__wrapper .edits .editor .editor__img {
+  width: 130px;
+  border-radius: 50%;
+  margin: 15px;
+  border: 2px solid #783fc6;
+}
+.editors .editors__wrapper .edits .editor .editor__line {
+  height: 2px;
+  width: 100%;
+  background: #783fc6;
+}
+.editors .editors__wrapper .edits .editor .info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  color: #783fc6;
+  font-size: 26px;
+  font-weight: 600;
+}
+.editors .editors__wrapper .edits .editor .info .editor__button--yt {
+  display: inline-block;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.editors .editors__wrapper .edits .editor .info .editor__button--yt:hover {
+  color: #fffaff;
+  background: #ff0000;
+}
+
 @keyframes slide {
   0% {
     left: 100%;

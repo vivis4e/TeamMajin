@@ -1,0 +1,73 @@
+.editors
+    width: 100%
+    height: 100vh
+    .editors__wrapper
+        width: 1400px
+        margin: 0 auto
+        height: 90%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .editors__heading
+            font-size: 40px
+            font-weight: 600
+            text-transform: uppercase
+            color: $colorBg
+        .editors__line
+            height: 3px
+            width: 140px
+            background: #c6a03f
+            margin-top: 5px
+        .edits
+            display: flex
+            margin-top: 90px
+            width: 55%
+            justify-content: space-between
+            .editor
+                background: $colorBg
+                border-radius: 5px
+                align-items: center
+                height: 300px
+                width: 30%
+                -webkit-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.3)
+                -moz-box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.3)
+                box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.3)
+                display: flex
+                flex-direction: column
+                aling-items: center
+                &:nth-child(2)
+                    position: relative
+                    top: -30px
+                .editor__img
+                    width: 130px
+                    border-radius: 50%
+                    margin: 15px
+                    border: 2px solid $colorPrimary
+                .editor__line
+                    height: 2px 
+                    width: 100% 
+                    background: $colorPrimary
+                .info
+                    display: flex
+                    flex-direction: column
+                    height: 100%
+                    align-items: center
+                    justify-content: space-around
+                    .streamer__name
+                    color: $colorPrimary
+                    font-size: 26px
+                    font-weight: 600
+                    .editor__button--yt
+                        display: inline-block
+                        color: #ff0000
+                        border: 1px solid #ff0000
+                        padding: 15px
+                        text-decoration: none
+                        font-size: 14px
+                        border-radius: 5px
+                        text-transform: uppercase
+                        transition: all .2s ease-in-out
+                        &:hover 
+                            color: $colorBg
+                            background: #ff0000
