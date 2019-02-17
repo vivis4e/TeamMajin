@@ -39,7 +39,7 @@
                         <a href="#">Designers</a>
                     </div>
                 </div>
-                <a href="about.html" class="nav__item active">about us</a>
+                <a href="about.php" class="nav__item active">about us</a>
             </nav>
             <a href="index.html" class="header__logo"><img src="img/mjnlgo.png" alt="Site logo"></a>
             <div class="header__icons">
