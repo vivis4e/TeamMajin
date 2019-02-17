@@ -82,5 +82,6 @@
             console.log('particles.json loaded')
         });
     </script>
+    <?php include 'twitter-app.php';?>
 </body>
 </html>
